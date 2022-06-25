@@ -11,7 +11,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter your zipcode"
+        android:text="@string/enter_your_zipcode"
         android:textSize="18sp"
 
 
@@ -26,6 +26,7 @@
         android:layout_margin="32dp"
         android:layout_marginBottom="8dp"
 
+        android:contentDescription="@string/location_on"
         android:src="@drawable/ic_baseline_location_on_24"
         app:layout_constraintBottom_toTopOf="@+id/title"
         app:layout_constraintEnd_toEndOf="@+id/title"
@@ -35,19 +36,21 @@
         android:id="@+id/zipcodeEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter zipcode"
+        android:hint="@string/enter_zipcode"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.267" />
+        app:layout_constraintVertical_bias="0.267"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/enterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit zipcode"
+        android:text="@string/submit_zipcode"
         app:layout_constraintEnd_toEndOf="@+id/zipcodeEditText"
         app:layout_constraintStart_toStartOf="@+id/zipcodeEditText"
         app:layout_constraintTop_toBottomOf="@+id/zipcodeEditText" />
